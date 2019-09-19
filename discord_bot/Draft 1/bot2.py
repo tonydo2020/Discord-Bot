@@ -63,4 +63,4 @@ async def on_message(message):
         
 
 ##    file.close()
-client.run('NjIzNjc5NjcyNTMzOTA5NTE1.XYMSkg.pWEcJUBIw_h4xsNLLLYdsDB-8ZM')
+client.run("token goes here")
