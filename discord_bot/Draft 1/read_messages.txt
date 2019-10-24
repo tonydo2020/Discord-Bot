@@ -1,4 +1,0 @@
-testing
-full
-sentences
-

@@ -1,13 +1,14 @@
 import discord
 import os
 from discord.ext import commands
-
+from datetime import date 
 
 client = commands.Bot(command_prefix ="") #Looking for commands
     
 @client.event
 async def on_ready():
     print("Bot is ready!")
+    
 
 
 @client.event
@@ -15,14 +16,18 @@ async def on_message(message):
     messages = message.content
     words = messages.split()
     print(words)
-    filename = 'read_messages.txt'
+
+
+    filename  = (today.strftime("%d_%m_%Y") + ".txt")
+    
     if os.path.exists(filename):
         append_write ='a'
     else:
         append_write ='w'
-
+        print(append_write)
 
     file = open(filename, append_write)
+    
     for word in words:
         file.write(word + '\n')
     file.close()
@@ -63,4 +68,5 @@ async def on_message(message):
         
 
 ##    file.close()
-client.run("token goes here")
+today = date.today()
+client.run("This is where your bot token goes ")
