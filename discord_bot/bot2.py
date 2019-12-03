@@ -69,4 +69,4 @@ async def on_message(message):
 
 ##    file.close()
 today = date.today()
-client.run("This is where your bot token goes ")
+client.run("NjIzNjc5NjcyNTMzOTA5NTE1.XbyO6g.7yNq9gS4IqRiM-kcCRkFh4zpHuA")
